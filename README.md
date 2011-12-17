@@ -1,4 +1,4 @@
-Compile in NetBeans on download the package.
+Compile in NetBeans or download the package.
 
 To use,
 
