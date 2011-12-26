@@ -170,7 +170,7 @@ public class OJN2BMS {
     
     private boolean writeSamples(Map<Integer,Integer> sampleMap, MySampleHandler sampleHandler, OutputStream outputStream) throws IOException {
         for (Map.Entry<Integer,Integer> entry : sampleMap.entrySet()) {
-            String line = "#WAV" + BMSWriter.toBase36(entry.getKey()) + " " + sampleHandler.getKeysoundFilename(entry.getValue()) + "\n";
+            String line = "#WAV" + BMSWriter.toBase36(entry.getKey() + 1) + " " + sampleHandler.getKeysoundFilename(entry.getValue()) + "\n";
             outputStream.write(line.getBytes());
         }
         return true;

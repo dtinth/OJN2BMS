@@ -142,7 +142,7 @@ public class BMSWriter implements BMSValueMaker {
      */
     @Override
     public String addNote(double value) {
-        return toBase36((int)Math.round(value));
+        return toBase36((int)Math.round(value) + 1);
     }
     
     
